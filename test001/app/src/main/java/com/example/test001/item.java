@@ -3,15 +3,15 @@ package com.example.test001;
 import android.graphics.drawable.Drawable;
 
 public class item {
-    private Drawable pic;
+    private int pic;
     private String title;
-    private String desc;
+    private int desc;
 
-    public Drawable getPic() {
+    public int getPic() {
         return pic;
     }
 
-    public void setPic(Drawable pic) {
+    public void setPic(int pic) {
         this.pic = pic;
     }
 
@@ -23,11 +23,11 @@ public class item {
         this.title = title;
     }
 
-    public String getDesc() {
+    public int getDesc() {
         return desc;
     }
 
-    public void setDesc(String desc) {
+    public void setDesc(int desc) {
         this.desc = desc;
     }
 }

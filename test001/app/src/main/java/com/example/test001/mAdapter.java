@@ -43,14 +43,14 @@ public class mAdapter extends BaseAdapter {
         //아이템 > 뷰에 들어갈 정보
         item item = listViewItemList.get(i);
 
-        iconImageView.setImageDrawable(item.getPic());
+        iconImageView.setImageResource(item.getPic());
         titleTextView.setText(item.getTitle());
-        descTextView.setText(item.getDesc());
+        descTextView.setText(item.getDesc()+"횟수");
 
         return view;
     }
 
-    public void addItem(Drawable icon, String title, String desc){
+    public void addItem(int icon, String title, int desc){
         item item = new item();
         item.setPic(icon);
         item.setTitle(title);
