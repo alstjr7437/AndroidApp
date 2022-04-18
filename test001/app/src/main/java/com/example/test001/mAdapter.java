@@ -45,7 +45,7 @@ public class mAdapter extends BaseAdapter {
 
         iconImageView.setImageResource(item.getPic());
         titleTextView.setText(item.getTitle());
-        descTextView.setText(item.getDesc()+"횟수");
+        descTextView.setText("총 "+item.getDesc()+"표");
 
         return view;
     }

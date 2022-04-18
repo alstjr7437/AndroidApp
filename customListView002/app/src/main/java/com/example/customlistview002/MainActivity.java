@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.human4), "동료","01055556666");
 
         //리스트뷰 누를 때 이벤트 처리
-        listview.setOnItemClickListener(new Adapte      rView.OnItemClickListener() {
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View v, int position, long id) {
                 ListViewItem item = (ListViewItem) parent.getItemAtPosition(position);
