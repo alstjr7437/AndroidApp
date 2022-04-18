@@ -28,14 +28,16 @@ public class VoteR extends AppCompatActivity {
         for (int i = 0; i < voteResult.length; i++) {
             adapter.addItem(imageD[i], imageName[i], voteResult[i]);
         }
+
+
+        Button btnReturn = (Button) findViewById(R.id.button2);
+        btnReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();       //투표 화면으로 돌아가기
+            }
+        });
     }
 
 
-//        Button btnReturn = (Button) findViewById(R.id.btnReturn);
-//        btnReturn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                finish();       //투표 화면으로 돌아가기
-//            }
-//        });
 }
